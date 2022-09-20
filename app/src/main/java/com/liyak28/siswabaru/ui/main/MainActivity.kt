@@ -12,7 +12,6 @@ import com.liyak28.siswabaru.common.utils.viewBinding
 import com.liyak28.siswabaru.data.local.entity.StudentsEntity
 import com.liyak28.siswabaru.data.state.ViewState
 import com.liyak28.siswabaru.databinding.ActivityMainBinding
-import com.liyak28.siswabaru.ui.map.MapActivity
 import com.liyak28.siswabaru.ui.student.StudentCreateActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     private fun initView() {
 
         binding.btnCreateStudent.setOnClickListener {
-            startActivity(Intent(this, MapActivity::class.java))
+            startActivity(Intent(this, StudentCreateActivity::class.java))
         }
 
         with(binding.rvStudent) {

@@ -74,4 +74,11 @@ dependencies {
     // play services
     implementation "com.google.android.gms:play-services-maps:17.0.0"
 
+    // easy permission
+    implementation "pub.devrel:easypermissions:3.0.0"
+
+    // play service
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+
 }

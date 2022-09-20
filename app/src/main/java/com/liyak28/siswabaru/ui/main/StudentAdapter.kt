@@ -1,5 +1,6 @@
 package com.liyak28.siswabaru.ui.main
 
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -47,8 +48,17 @@ class StudentAdapter(
 
         fun bindTo(it: StudentsEntity) {
 
-            binding.tvName.text = it.name
-            binding.tvNisn.text = it.nisn
+            with(binding) {
+                tvName.text = it.name
+                tvPhone.text = it.phone
+                tvAddress.text = it.address
+                tvGender.text = if (it.gender == "L") "Laki-laki" else "Perempuan"
+                tvLocation.text = "latitude : ${it.lat}, longitude : ${it.lng}"
+
+                val imageBitmap = BitmapFactory.decodeFile(it.image)
+                binding.ivProfile.setImageBitmap(imageBitmap)
+
+            }
 
         }
 

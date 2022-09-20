@@ -9,8 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnCreateStudent"
-        >
+        android:layout_above="@+id/btnCreateStudent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,42 +17,36 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/textH1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Daftar Data Siswa"
-                style="@style/textH1"
                 android:layout_margin="16dp"
-                />
+                android:text="Daftar Data Siswa" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvStudent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:itemCount="6"
-                tools:listitem="@layout/item_student"
-                />
+                tools:listitem="@layout/item_student" />
 
         </LinearLayout>
 
-
-
         <include
             android:id="@+id/viewEmpty"
-            layout="@layout/view_empty"/>
+            layout="@layout/view_empty" />
 
     </FrameLayout>
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCreateStudent"
+        style="@style/btnPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/btnPrimary"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Tambah Siswa"
-        />
+        android:layout_marginBottom="16dp"
+        android:text="Tambah Siswa" />
 
 </RelativeLayout>
