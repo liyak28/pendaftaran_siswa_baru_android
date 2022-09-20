@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Pendaftaran Siswa Baru</string>
+
+
+    <string name="core_rationale_phone_state" translatable="false">This app needs access to your phone state.</string>
+    <string name="core_rationale_location" translatable="false">This app needs access to your location.</string>
+    <string name="core_rationale_camera" translatable="false">This app needs access to your camera.</string>
+    <string name="core_rationale_storage" translatable="false">This app needs access to your storage.</string>
+    <string name="core_rationale_sms" translatable="false">This app needs access to your sms.</string>
+    <string name="core_rationale_call_phone" translatable="false">This app needs access to your call phone.</string>
+    <string name="core_rationale_camera_and_storage" translatable="false">This app needs access to your camera and storage.</string>
+    <string name="core_rationale_contact">Allow Lifepack to access your contacts?</string>
+
+    <string name="core_permission_deny_camera" translatable="false">You disable camera permission, maybe some feature will not working.</string>
+    <string name="core_permission_deny_location" translatable="false">You disable location permission, maybe some feature will not working.
+    </string>
+    <string name="core_permission_deny_phone_state" translatable="false">You disable phone state permission, maybe some feature will not
+        working.
+    </string>
+    <string name="core_permission_deny_storage" translatable="false">You disable storage permission, maybe some feature will not working.</string>
+    <string name="core_permission_deny_sms" translatable="false">You disable sms permission, maybe some feature will not working.</string>
+    <string name="core_permission_deny_camera_and_storage" translatable="false">You disable camera or storage permission, maybe some feature will not working.</string>
+    <string name="core_permission_not_granted" translatable="false">Permission %s not granted, open settings to allow.</string>
+    <string name="core_permission_deny_title">Permission Contact Denied</string>
+    <string name="core_permission_deny_description">You need to allow access to Contact to use this feature</string>
+    <string name="core_permission_cancel">Cancel</string>
+    <string name="core_permission_open_settings">Open Settings</string>
+
 </resources>

@@ -3,71 +3,115 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
         android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        >
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/studentView"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            >
 
-            <TextView
-                android:id="@+id/tvLabelName"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/studentView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Siswa"
-                style="@style/textBody2"
-                android:textColor="@color/textBlack3"
-                />
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/textSub2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Lia Miftakhul Khusnia"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/textBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="0812 1314 1516"
+                    />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    style="@style/textBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Perempuan"
+                    />
+
+                <TextView
+                    style="@style/textSub3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Alamat"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/textBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Sleman, Yogyakarta"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/textBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Lokasi : Latitude, Longtitude"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lia Miftakhul Khusnia"
-                style="@style/textSub1"
-                android:textColor="@color/textBlack"
-                android:layout_marginTop="3dp"
-                />
+                android:orientation="vertical"
+                android:layout_below="@id/ivProfile"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                >
 
-            <TextView
-                android:id="@+id/tvLabelNisn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="NISN"
-                style="@style/textBody2"
-                android:textColor="@color/textBlack3"
-                android:layout_marginTop="16dp"
-                />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvNisn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12345678910"
-                style="@style/textSub1"
-                android:textColor="@color/textBlack"
-                android:layout_marginTop="3dp"
-                />
-
-        </LinearLayout>
-
+        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/line"
             android:layout_below="@+id/studentView"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
-            />
+            android:layout_marginBottom="8dp"
+            android:background="@color/line" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>

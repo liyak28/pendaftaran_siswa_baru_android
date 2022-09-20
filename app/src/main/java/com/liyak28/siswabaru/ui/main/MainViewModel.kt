@@ -40,8 +40,6 @@ class MainViewModel @Inject constructor(
 
         location.forEach {
             val distance = getDistance(it.lat ?: 0.0, it.lng ?: 0.0)
-            setLog("name : ${it.name}")
-            setLog("distance : ${distance}")
             distanceLocationList.add(
                 LocationDistanceModel(
                     distance,
@@ -81,30 +79,5 @@ class MainViewModel @Inject constructor(
     private fun rad2deg(rad: Double): Double {
         return rad * 180.0 / Math.PI
     }
-
-//    private fun getSampleData(): List<StudentsEntity> {
-//        return mutableListOf<StudentsEntity>(
-//            StudentsEntity(
-//                1, "", "Outlet Biru", "", "", "",
-//                lat = -7.768795994165753,
-//                lng = 110.40187898433689
-//            ),
-//            StudentsEntity(
-//                1, "", "Malioboro", "", "", "",
-//                lat = -7.790515709521777,
-//                lng = 110.36595237432917
-//            ),
-//            StudentsEntity(
-//                1, "", "Els Computer", "", "", "",
-//                lat = -7.778032105693385,
-//                lng = 110.37372950056336
-//            ),
-//        )
-//    }
-
-    private fun setLog(msg: String) {
-        Log.e("main", msg)
-    }
-
 
 }

@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.liyak28.siswabaru">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:name=".AndroidApp"
         android:allowBackup="true"
@@ -14,12 +18,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.map.MapActivity"
-            android:exported="false"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="adjustResize"
-            />
         <activity
             android:name=".ui.student.StudentCreateActivity"
             android:exported="false"
@@ -40,13 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDR1gZOOD7UP9Q_lsXc5s5kVhvCQyrsO1s"
-            />
-
-        <!-- API_KEY  di dapat dari ini : https://medium.com/android-news/draggable-map-view-android-example-a181bb0dd231 -->
 
     </application>
 
